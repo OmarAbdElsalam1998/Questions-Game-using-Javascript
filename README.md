@@ -1,0 +1,1 @@
+open with live server to get data fron json file successfully

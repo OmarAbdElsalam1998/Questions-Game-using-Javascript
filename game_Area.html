@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تحدي العباقرة</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/game_Area_Style.css" />
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+     
+     <!-- Noto kufi Arabic font Style -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Kufi+Arabic:wght@200&display=swap" rel="stylesheet">
+    <!-- FontAwsome icon  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  </head>
+  <body>
+    <!-- Start Game Area -->
+    <div class="game-area position-relative">
+        <div class="overlay w-100 h-100">
+            <!-- Game info and counter time  and helping -->
+            <header class="game-header py-4 text-light d-flex justify-content-center ">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class=" col-3">
+                            <!-- Timer fo ansewing time per question -->
+                            <span class="timer fw-bold fs-2">00:30</span>
+                        </div>
+                        <div class=" col-3 d-flex align-items-center ">
+                            <!-- عدد المحاولات -->
+                            <i class="fa-light fa-heart-crack fa-2x px-2"></i>
+                            <span class="live-count fw-bold ">2</span>
+                        </div>
+                        <div class=" col-2">
+                            <!-- Exchange the question -->
+                            <span class="exchange">
+                                <i class="fa-light fa-arrow-right-arrow-left fa-2x"></i>
+                            </span>
+                            
+                        </div>
+                        <div class=" col-4 text-start">
+                            <button class="leave-game">مغادرة اللعبة</button>
+                        </div>
+                    </div>
+                 
+                </div>
+             </header>
+             <main class="question-area text-center p-5 mt-2 m-auto  ">
+                <div class="container m-auto">
+                    <!-- Field to display the question -->
+                    <div class="question text-center  p-4 col-12 ">
+                       <span >كم عدد الدول العربية</span> 
+                    </div>
+
+                    <!-- Display Answers -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- First Answer -->
+                            <div class="answer answer-one p-3 mt-4">
+                                <span>24</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <!-- second Answer -->
+                            <div class="answer answer-two p-3 mt-4">
+                                <span>23</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- third Answer -->
+                            <div class="answer answer-three p-3 mt-4">
+                                <span>23</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Fourth Answer -->
+                            <div class="answer answer-four p-3 mt-4">
+                                <span>23</span>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+             </main>
+
+             <!-- Start level progress -->
+
+             <!-- <div class="level-progress mt-3"> 
+                <div class="container d-flex position-relative">
+                    <!-- progress for level one -->
+                    <!-- <div class="level level-one ">
+                        <span></span>
+                        <span class="start position-absolute d-block"><i class="fa-light fa-hourglass-start fa-4x"></i></span>
+                        <span></span>
+                    </div> -->
+                    <!-- progress for level otwo -->
+                    <!-- <div class="level level-two ">
+                        <span></span>
+                        <span></span>
+                    </div> -->
+                    <!-- progress for level three -->
+                    <!-- <div class="level level-three ">
+                        <span></span>
+                        <span></span>
+                    </div> -->
+                    <!-- progress for level four --> 
+                    <!-- <div class="level level-four ">
+                        <span></span>
+                        <span class="cup position-absolute d-block "><i class="fa-light fa-trophy-star fa-4x"></i></span>
+                    </div> -->
+<!--                     
+                </div>
+             </div> -->
+
+             <!-- End level Progress -->
+        </div>
+
+        
+            <div class="alert-box position-absolute p-5 text-center ">
+                <span>dddd</span>
+            </div>
+        
+        
+    </div>
+    <!-- End Game Area -->
+
+    <!-- Start Game popup -->
+
+    <div class="startgame position-absolute text-center p-5">
+        <button class=" btn  py-2 w-75 mb-3 text-light fw-bold">إبدأ اللعب الأن</button>
+        <button class="btn  py-2 w-75  fw-bold">خروج</button>
+    </div>
+
+    <!-- Start Game -->
+
+
+    <!-- Start Game popup -->
+
+    <!-- <ul class="right-menu  list-unstyled position-fixed right-0 top-50 bg-dark px-2 py-3" >
+      <li class="d-flex align-items-center text-light right-50 p-3"> <span class="px-2">عمر عبد السلام</span><i class="fa-light fa-user fa-2x"></i></li>
+      <lu class=" d-flex align-items-center text-light right-50 p-3"><span>خروج</span><i class="fa-light fa-sign-up fa-2x"></i></li>
+      </ul> -->
+
+    <!-- Start Game -->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

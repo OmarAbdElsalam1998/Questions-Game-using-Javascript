@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تحدي العباقرة</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Main_Style.css" />
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+     
+     <!-- Noto kufi Arabic font Style -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Kufi+Arabic:wght@200&display=swap" rel="stylesheet">
+    <!-- FontAwsome icon  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+  </head>
+  <body>
+    <header class="header position-relative">
+      <div class="overlay w-100 h-100 py-5 z-index-1 position-relative">
+        <div class="container  ">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="fa-light fa-lightbulb fa-2x"></i>
+            <span class="fw-bold">تحدي المعرفة</span>
+          </a>
+          <div class="landing d-flex justify-content-center align-items-center">
+            <div class="landing-content text-center">
+              <h2 class="h1  fw-bold mb-3"> مستوي معرفتك جيد!!</h2>
+              <p class="mb-5">لا تتردد واختبر قدراتك الآن في لعبة تحدي المعرفة ...</p>
+              <button class="btn main-btn fw-bold px-5 py-2" onclick="startGame()">إبدأ التحدي الآن</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- <div class="animation ">
+        <span class="position-absolute"style="z-index:0;position:absolute;display:block;top:0;width:200px;height:200px;background-color: red;"></span>
+
+      </div> -->
+      </header>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script >
+      function startGame(){
+          open("game_Area.html","_self");
+      }
+    </script>
+  </body>
+</html>

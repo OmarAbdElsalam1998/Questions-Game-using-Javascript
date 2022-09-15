@@ -1,0 +1,191 @@
+body{
+    direction: rtl;
+    height:100vh;
+    background-image: url("../images/Best-63-Gaming-Backgrounds-on-HipWallpaper-Gaming-.jpg");
+    background-size: cover;
+}
+.game-area{
+    height:100vh;
+    display: none;
+}
+.game-area .overlay{
+    background-color: #35457761;
+}
+.game-area .game-header{
+    position: relative;
+}
+.game-area .game-header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width:50%;
+    height: 3px;
+    background-image: linear-gradient(45deg, #ff4f4f, #728d)
+}
+
+.game-area .game-header .leave-game{
+    padding: 10px 20px;
+    border: none;
+    background-image: linear-gradient(45deg, #e91e63, #ffda1d);
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+.game-area .game-header .leave-game:active{
+    transform: translateY(8px);
+}
+.game-area .game-header .exchange{
+    cursor: pointer;
+}
+
+.question-area .question{
+    border: 3px solid #ffab22;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 3vw;
+    border-radius: 50px 0 ;
+}
+.question-area .answer{
+        color: #FFF;
+        font-weight: bold;
+        background-image: linear-gradient(45deg, #9c27b0, #feef6d);
+        /* border: 3px solid #9c27b0; */
+        border-radius: 50px;
+        cursor:pointer;
+        transition: all .3s ease;
+    }
+    .question-area .answer:active{
+        transform: translateX(10px);
+    }
+
+    /* End question area */
+
+
+    /* Start level progress */
+    .level-progress .level{
+        direction: ltr;
+        width:25%;
+        margin: 5px;
+        height: 8px;
+        background-color: rgb(236, 232, 232);
+        position: relative;
+    }
+    .level-progress .level span:first-child{
+        position: absolute;
+        display: block;
+        width:0;
+        height: 100%;
+        top:0;
+        right: 0;
+        background-color: rgb(68, 28, 177);
+    }
+    .level-progress .level:not(.level-four) span:last-child {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 35px;
+        top: -13px;
+        left: -23px;
+        z-index: 2;
+        border-radius: 50%;
+        background-color: rgb(191, 189, 196);
+
+        border: 5px solid #FFF;
+    }
+    .level-progress .level-one span:nth-child(2){
+        top: -28px;
+    right: -32px;
+    color: #EEE
+    }
+    
+    .level-progress .level-four span:last-child{
+        top: -45px;
+        left: -37px;
+        color: #EEE
+    }
+    .level-progress .level:not(.level-four) span:last-child.active{
+        background-color: rgb(68, 28, 177);
+        
+    }
+    .level-progress .level .active i,
+    .level-progress .level .active i{
+        color:rgb(68, 28, 177);
+    }
+
+    /* End level progress */
+
+
+
+    /* start alert box */
+    .alert-box{
+        width:40vw;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #FFF;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 13px;
+
+        transition: all 1s ease-in-out;
+    }
+    .alert-box .alert-message{
+        display: block;
+        padding:10px;
+        font-size: 23px;
+        font-weight: bold;
+  
+    }
+
+
+    /* start Game */
+    .startgame{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50vw;
+        padding: 10px;
+        background-color: #27429b45;
+        border-radius: 12px;
+        box-shadow: 2px 1px 15px 2px #00000047;
+        z-index: 9999;
+        
+    }
+    .startgame button:first-child{
+        border:none;
+        outline: none;
+        background-color: #e9c24d;
+        border:2px solid #e9c24d;
+
+        transition: all .3s ease-in-out;
+    }
+    .startgame button:first-child:hover{
+        background-color: transparent;
+        border:2px solid #e9c24d;
+    }
+    .startgame button:last-child{
+        border:none;
+        outline: none;
+        background-color: #e3e3e3;
+        border:2px solid #e3e3e3;
+        transition: all .3s ease-in-out;
+
+    }
+    .startgame button:last-child:hover{
+    background-color: transparent;
+    border:2px solid #e3e3e3;
+    color:#FFF;
+
+}
+    
+.right-menu{
+    width:60px;
+}
+.right-menu >div{
+    left:-30px;
+    width:200px;
+}
+ 
+
+    /* Start Game */

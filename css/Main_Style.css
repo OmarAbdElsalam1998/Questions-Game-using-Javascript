@@ -1,0 +1,57 @@
+:root {
+ --overlay_color:rgb(3 10 31 / 68%);
+
+}
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+    box-sizing: border-box;
+  direction: rtl;
+
+}
+
+.header {
+  height: 100vh;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  
+}
+.header .overlay{
+  background-color: var(--overlay_color);
+  z-index: 9;
+}
+.header .navbar-brand i{
+  color: #ffb612;
+  transform: rotate(39deg);
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+}
+.header .navbar-brand span{
+  color:#FFF;
+  font-size: 1.5rem;
+  
+}
+.header .landing{
+  height: 70vh;
+}
+.header .landing .landing-content .h1{
+   font-size: 5vw ;
+   color:#FFF;
+}
+
+.header .landing .landing-content p{
+  
+  color: #ffb612;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header .landing .landing-content .main-btn{
+  background-color: #ffb612;
+  color: #FFF;
+  outline: none;
+  border: 2px solid #ffb612;
+  transition: background-color .4s ease-in-out;
+}
+.header .landing .landing-content .main-btn:hover{
+  background-color: transparent;
+}

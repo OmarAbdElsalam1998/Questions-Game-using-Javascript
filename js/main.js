@@ -200,10 +200,11 @@ showAlertMessage=(messageType)=>{
             break;
          }
          case "leave-game":{
-            let text="هل حقا تريد مغادرة اللعبة"
+            let text="هل حقا تريد مغادرة اللعبة";
             messageText=document.createTextNode(text);
             message.className="alert-message";
-            message.style.color="green";
+            message.style.color="#3f70bb";
+            
 
             //create agree to close button
             let agreeToCloseGameButton=document.createElement("button");
@@ -211,23 +212,21 @@ showAlertMessage=(messageType)=>{
             agreeToCloseGameButton.appendChild(btnAgreeText);
             let classes1=["btn","btn-primary","agree-to-close"];
             agreeToCloseGameButton.classList.add(...classes1);
-            agreeToCloseGameButton.style.margin=" 0 10px";
+            agreeToCloseGameButton.style.margin=" 0 5px";
 
             //create disagree to close button
             let disagreeToCloseGameButton=document.createElement("button");
             let btnDisgreeText=document.createTextNode("لا");
             disagreeToCloseGameButton.appendChild(btnDisgreeText);
-            disagreeToCloseGameButton.style.margin="0 10px";
+            disagreeToCloseGameButton.style.margin="0 5px";
             let classes2=["btn","btn-success","disagree-to-close"];
             disagreeToCloseGameButton.classList.add(...classes2);
 
 
             message.appendChild(messageText);
-            message.appendChild(agreeToCloseGameButton);
-            message.appendChild(disagreeToCloseGameButton);
-            message.className="alert-message";
-            message.style.color="green";
             alert.appendChild(message);
+            alert.appendChild(agreeToCloseGameButton);
+            alert.appendChild(disagreeToCloseGameButton);
             break;
          }
     }    
@@ -245,7 +244,7 @@ showAlertMessage=(messageType)=>{
 
 //when player clicks on start game Button
 startGameButton.addEventListener("click",function(){
-    this.parentNode.style.display="none";
+    startGamePopUp.style.display="none";
     //reset live refreshment
     lifeRefreshmentValue=2;
     lifeRefreshmentElement.innerHTML=lifeRefreshmentValue;
@@ -262,12 +261,12 @@ startGameButton.addEventListener("click",function(){
         localStorage.setItem("level",level.toString());
     }
 
-    //get questions from Api
-    getListOfQuestions();
-    setTimeout(function(){
-        gameArea.style.display="block";
-        resetTimer();        
-    },1000);
+        //get questions from Api
+        getListOfQuestions();
+        setTimeout(function(){
+            gameArea.style.display="block";
+            resetTimer();        
+        },1000);
 });
 
 // //when player clicks on Exit game Button
@@ -382,14 +381,20 @@ QuestionsAndAnswersOperations=(Questions)=>{
                 
               }
               
-              if(currentIndexOfQuestion < Questions.length){
+              if(currentIndexOfQuestion < Questions.length  ){
                 //display next Question
                 currentIndexOfQuestion++;
                 setTimeout(function(){
 
                     //user finish question of specific level
-                    if(currentIndexOfQuestion==Questions.length && level<=5){
-                        upgradeLevel();
+                    if(currentIndexOfQuestion==Questions.length && level<=5 ){
+                        if(lifeRefreshmentValue!=0)
+                            upgradeLevel();
+
+                        else
+                            e.target.style.backgroundImage=currentbackground;   
+
+                        
 
 
                     }else{
@@ -436,8 +441,8 @@ QuestionsAndAnswersOperations=(Questions)=>{
           //if user confirm close of game
           else if(e.target.classList.contains("agree-to-close")){
             //close game 
+            clearInterval(timerInterval);
             gameArea.style.display="none";
-
             startGamePopUp.style.display="block";
             alert.style.visibility = "hidden";
             alert.style.opacity = 0;

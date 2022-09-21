@@ -51,7 +51,7 @@ body{
 @media (max-width:576px){
     .question-area .question{
         font-size: 5vw;
-        margin: 60px 0 30px 0;
+        margin: 30px 0 30px 0;
        
     }  
 }

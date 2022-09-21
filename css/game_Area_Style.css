@@ -3,6 +3,8 @@ body{
     height:100vh;
     background-image: url("../images/Best-63-Gaming-Backgrounds-on-HipWallpaper-Gaming-.jpg");
     background-size: cover;
+    box-sizing: border-box;
+    padding: 0 5px;
 }
 .game-area{
     height:100vh;
@@ -42,9 +44,16 @@ body{
 .question-area .question{
     border: 3px solid #ffab22;
     color:#FFF;
-    font-weight: bold;
     font-size: 3vw;
+    font-weight: bold;
     border-radius: 50px 0 ;
+}
+@media (max-width:576px){
+    .question-area .question{
+        font-size: 5vw;
+        margin: 60px 0 30px 0;
+       
+    }  
 }
 .question-area .answer{
         color: #FFF;
@@ -137,6 +146,12 @@ body{
         font-weight: bold;
   
     }
+    @media (max-width:576px){
+        .alert-box{
+            width: 95vw;
+           
+        }  
+    }
 
 
     /* start Game */
@@ -151,6 +166,12 @@ body{
         box-shadow: 2px 1px 15px 2px #00000047;
         z-index: 9999;
         
+    }
+    @media (max-width:576px){
+        .startgame{
+            width: 95vw;
+           
+        }  
     }
     .startgame button:first-child{
         border:none;

@@ -55,3 +55,20 @@ body {
 .header .landing .landing-content .main-btn:hover{
   background-color: transparent;
 }
+
+
+@media(max-width:576px){
+  .header .landing .landing-content .h1{
+    font-size: 10vw;
+}
+}
+@media (min-width:576px){
+  .header .landing .landing-content .h1{
+    font-size: 8vw;
+}
+}
+@media (min-width:768px){
+  .header .landing .landing-content .h1{
+    font-size: 6vw;
+}
+}
